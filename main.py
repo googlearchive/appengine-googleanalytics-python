@@ -20,8 +20,8 @@ class MainPage(webapp2.RequestHandler):
   """Main page for tracking demo application."""
 
   def get(self):
-     tracking.track_event_to_ga('Error', "Payment", 'Amount', '100')
-     self.response.write('Posted a tracking event to Google Analytics.')
+     tracking.track_event_to_ga("Error", "Payment", "Amount", "100")
+     self.response.write("Posted a tracking event to Google Analytics.")
 
 app = webapp2.WSGIApplication([('/', MainPage)],
                               debug=True)
