@@ -17,7 +17,7 @@ import tracking
 import webapp2
 
 class MainPage(webapp2.RequestHandler):
-  """Main page for GCS demo application."""
+  """Main page for tracking demo application."""
 
   def get(self):
      tracking.track_event_to_ga('Error', "Payment", 'Amount', '100')
