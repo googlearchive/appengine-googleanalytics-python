@@ -40,4 +40,4 @@ def track_event_to_ga(category, action, label=None, value=None):
   # Should return 200 if the call was successful.
   return result.status_code == 200
 
-  # [END tracking_function]
+# [END tracking_function]
