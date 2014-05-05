@@ -13,7 +13,7 @@
 # limitations under the License.
 
 application: your-app-id-here
-version: gatracking
+version: gatracking-demo-python
 runtime: python27
 api_version: 1
 threadsafe: yes

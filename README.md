@@ -8,8 +8,9 @@ Integrating App Engine with Google Analytics
 an application, and get a tracking id.
 - Set the *GA_TRACKING_ID* constant in tracking.py to the Google Analytics 
 tracking id of your application.
-- Set the *application* parameter in the app.yaml file to be your App Engine
-app id.
+
+## Running the demo
+- Run the *build.sh* command to build and run the demo.
 
 ## Contributing changes
 
