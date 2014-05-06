@@ -6,11 +6,18 @@ Integrating App Engine with Google Analytics
 
 - Register for [Google Analytics](http://www.google.com/analytics/), create
 an application, and get a tracking id.
-- Set the *GA_TRACKING_ID* constant in tracking.py to the Google Analytics 
+- Set the `GA_TRACKING_ID` constant in `tracking.py` to the Google Analytics
 tracking id of your application.
 
 ## Running the demo
-- Run the *build.sh* command to build and run the demo.
+
+To build the demo, run
+
+    build.sh build_demo
+
+To run the demo, run
+
+    build.sh run_demo
 
 ## Contributing changes
 
