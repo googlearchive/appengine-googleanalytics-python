@@ -11,7 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-# [START tracking_function]
+# [START tracking_code]
 """A function that posts a tracking event to Google Analytics."""
 
 import urllib
@@ -19,13 +19,14 @@ from google.appengine.api import urlfetch
 
 # Set this to the specific Google Analytics Tracking Id for your application.
 GA_TRACKING_ID = "UA-XXXX-Y"
+GA_CLIENT_ID = "555"
 
 def track_event_to_ga(category, action, label=None, value=None):
   """ Posts an Event Tracking message to Google Analytics. """
   form_fields = {
     "v": "1",               # Version.
     "tid": GA_TRACKING_ID,  # Tracking ID / Web property / Property ID.
-    "cid": "555",           # Anonymous Client ID.
+    "cid": GA_CLIENT_ID,    # Anonymous Client ID.
     "t": "event",           # Event hit type.
     "ec": category,         # Event Category. Required.
     "ea": action,           # Event Action. Required.
@@ -37,7 +38,6 @@ def track_event_to_ga(category, action, label=None, value=None):
       payload=form_data,
       method=urlfetch.POST,
       headers={"Content-Type": "application/x-www-form-urlencoded"})
-  # Should return 200 if the call was successful.
-  return result.status_code == 200
+  return result.status_code
 
-# [END tracking_function]
+# [END tracking_code]
