@@ -1,3 +1,8 @@
+![status: inactive](https://img.shields.io/badge/status-inactive-red.svg)
+
+**This repository is archived and no longer maintained.**
+The sample has been moved to [GoogleCloudPlatform/python-docs-samples](https://github.com/GoogleCloudPlatform/python-docs-samples).
+
 ## appengine-googleanalytics-python
 
 Integrating App Engine with Google Analytics
